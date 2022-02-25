@@ -1,2 +1,19 @@
-<meta http-equiv="refresh" content="1">
-<img src="https://ristmikud.tallinn.ee/last/cam103.jpg">
+<html>
+
+<head>
+<script language="JavaScript"><!--
+function refreshIt() {
+   if (!document.images) return;
+   document.images['myCam'].src = 'https://ristmikud.tallinn.ee/last/cam103.jpg?' + Math.random();
+   setTimeout('refreshIt()',900); // refresh every 5 secs
+}
+//--></script>
+</head>
+
+<body onLoad=" setTimeout('refreshIt()',900)">
+
+<img src="https://ristmikud.tallinn.ee/last/cam103.jpg" name="myCam">
+
+</body>
+
+</html>
