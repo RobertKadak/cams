@@ -1,0 +1,14 @@
+<html>
+<head>
+<script language="JavaScript"><!--
+function refreshIt() {
+   if (!document.images) return;
+   document.images['cam'].src = 'https://ristmikud.tallinn.ee/last/cam176.jpg?' + Math.random();
+   setTimeout('refreshIt()',900);
+}
+//--></script>
+</head>
+<body onLoad=" setTimeout('refreshIt()',900)">
+<img src="https://ristmikud.tallinn.ee/last/cam176.jpg" name="cam">
+</body>
+</html>
